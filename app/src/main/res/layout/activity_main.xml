@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="fields"
+            type="com.example.slambook.Fields" />
+
+    </data>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/slambook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name_done"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/raleway_light_italic"
+                    android:textAlignment="center"
+                    android:textSize="36sp"
+                    android:visibility="gone"
+                    tools:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/nickname_done"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_light_italic"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:visibility="gone"
+                    tools:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/age_done"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_light_italic"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:visibility="gone"
+                    tools:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/thank_you"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_light_italic"
+                    android:text="@string/thank_you"
+                    android:textAlignment="center"
+                    android:textSize="40sp"
+                    android:visibility="gone"
+                    tools:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/hello"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_light_italic"
+                    android:text="@string/hello"
+                    android:textAlignment="center"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_light_italic"
+                    android:text="@string/name" />
+
+                <EditText
+                    android:id="@+id/name_entry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_light_italic"
+                    android:hint="@string/enter_name"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_light_italic"
+                    android:text="@string/nickname" />
+
+                <EditText
+                    android:id="@+id/nickname_entry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_light_italic"
+                    android:hint="@string/enter_nickname"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_light_italic"
+                    android:text="@string/age" />
+
+                <EditText
+                    android:id="@+id/age_entry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_light_italic"
+                    android:hint="@string/enter_age"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_light_italic"
+                    android:text="@string/birthday" />
+
+                <EditText
+                    android:id="@+id/birthday_entry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_light_italic"
+                    android:hint="@string/enter_birthday"
+                    android:inputType="date" />
+
+                <TextView
+                    android:id="@+id/course"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_light_italic"
+                    android:text="@string/course" />
+
+                <EditText
+                    android:id="@+id/course_entry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_light_italic"
+                    android:hint="@string/enter_course"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/mobile_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_light_italic"
+                    android:text="@string/mobile_number" />
+
+                <EditText
+                    android:id="@+id/mobile_number_entry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_light_italic"
+                    android:hint="@string/enter_mobile_number"
+                    android:inputType="phone" />
+
+                <TextView
+                    android:id="@+id/color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_light_italic"
+                    android:text="@string/color" />
+
+                <EditText
+                    android:id="@+id/color_entry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_light_italic"
+                    android:hint="@string/enter_favorite_color"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/ultimate_dream"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_light_italic"
+                    android:text="@string/ultimate_dream" />
+
+                <EditText
+                    android:id="@+id/ultimate_dream_entry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_light_italic"
+                    android:hint="@string/enter_ultimate_dream"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/secret_crush"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_light_italic"
+                    android:text="@string/secret_crush" />
+
+                <EditText
+                    android:id="@+id/secret_crush_entry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_light_italic"
+                    android:hint="@string/enter_crush"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_light_italic"
+                    android:text="@string/message" />
+
+                <EditText
+                    android:id="@+id/message_entry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/raleway_light_italic"
+                    android:gravity="start|top"
+                    android:hint="@string/enter_message"
+                    android:inputType="textMultiLine" />
+
+                <Button
+                    android:id="@+id/done"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_light_italic"
+                    android:text="@string/done" />
+
+            </LinearLayout>
+        </ScrollView>
+</layout>
